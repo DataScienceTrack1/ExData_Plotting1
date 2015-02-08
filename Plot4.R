@@ -8,7 +8,7 @@ plot(data$Date,data$Global_active_power, type="l",ylab="Global Active Power",xla
 plot(data$Date,data$Sub_metering_1, type="l",ylab="Energy sub metering",xlab="")
 lines(data$Date,data$Sub_metering_2, type="l", col="red")
 lines(data$Date,data$Sub_metering_3, type="l", col="blue")
-legend("topright", box.lwd=0, legend=names(data[7:9]), lty=1, col=c("black","red","blue"), cex=0.7)
+legend("topright", box.lwd=0, legend=names(data[7:9]), lty=1, col=c("black","red","blue"), cex=0.25)
 plot(data$Date,data$Voltage, type="l",ylab="Voltage",xlab="datetime")
 plot(data$Date,data$Global_reactive_power, type="l",ylab="Global_reactive_power",xlab="datetime")
 dev.copy(png,file="Plot4.png")
